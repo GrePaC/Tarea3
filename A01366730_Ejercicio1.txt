@@ -1,0 +1,117 @@
+﻿Clear
+Input
+Store X
+Input
+Store A
+Input
+Store B
+Input
+Store C
+/MAIN
+Load X
+Store Total
+Jump first
+/2*a
+first,Load A
+Store mult1
+Load dos
+Store mult2
+Jump MULT
+
+second, Load B
+Store mult1
+Load tres
+Store mult2
+Jump MULT
+
+third, Load C
+Store mult1
+Load cuatro
+Store mult2
+Jump MULT
+
+/MULT
+MULT,Load mult2
+Skipcond 000
+Jump nonneg
+
+Subt mult2
+Subt mult2
+Store mult2
+Clear
+Add uno
+Store negflag
+Clear
+Jump loop
+
+nonneg,  Clear
+         Store negflag
+         Load mult2
+         Skipcond 400
+         Jump loop
+         Jump test
+
+loop,    Load resultado
+         Add mult1
+         Store resultado
+
+         Load mult2
+         Subt uno
+         Store mult2
+	
+         Skipcond 400
+         Jump loop 
+  
+
+Load negflag
+Skipcond 800
+Jump test
+
+Load resultado
+Subt resultado
+Subt resultado
+Store resultado
+
+test,   Load resultado
+		Load Total
+		Subt resultado
+        Store Total
+        Load Total
+        Load cero
+		Store resultado
+        Load cont
+        Subt uno
+        Store cont
+        Load cont
+        Skipcond 000
+        Jump ciclo
+		Jump halt
+
+ciclo, Load cont
+	  Skipcond 400
+      Jump second
+      Jump third
+
+		
+halt, Load Total
+	Output
+    Halt
+/Mlt
+mult1,DEC 0
+mult2,DEC 0
+negflag, DEC 0
+resultado, DEC 0
+/Principal
+Total, DEC 0
+cont, DEC 2
+/Constants
+cero,DEC 0
+uno, DEC 1
+dos, DEC 2
+tres, DEC 3
+cuatro,DEC 4
+/Inputs
+X, DEC 0
+A, DEC 0
+B, DEC 0
+C, DEC 0

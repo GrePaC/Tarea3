@@ -1,0 +1,58 @@
+﻿/Grecia Pacheco A01366730
+Clear
+/Valor inicial X
+Input
+StoreI X
+/Siguiente espacio
+Load X
+Store In
+JnS Incremento
+Load In
+Store Y
+JnS Incremento
+Load In
+Store Z
+JnS Incremento
+Load In
+Store A
+JnS Incremento
+Load In
+Store B
+JnS Incremento
+Load In
+Store C
+Jump end
+Incremento,HEX 0
+Load In
+Add uno
+Store In 
+JumpI Incremento
+/Values
+end,LoadI X
+Add uno
+StoreI Y
+LoadI Y
+Add uno
+StoreI Z
+LoadI Z
+Add uno
+StoreI A
+LoadI A
+Add uno
+StoreI B
+LoadI B
+Add uno
+StoreI C
+
+Halt
+
+
+X, HEX 040
+Y, HEX 0
+Z, HEX 0
+A, HEX 0
+B, HEX 0
+C,HEX 0
+uno,HEX 1
+In,HEX 0
+

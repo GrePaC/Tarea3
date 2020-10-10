@@ -1,0 +1,59 @@
+﻿/Grecia Pacheco
+Clear
+/X, Load X=81,LoadI X=input+1
+Load X
+Add uno
+Store X
+Input
+StoreI X
+LoadI X
+Add uno
+StoreI X
+/Y,Load Y=83,LoadI Y=input+2
+Load Y
+Add dos
+Store Y
+Input
+StoreI Y
+LoadI Y
+Add dos
+StoreI Y
+/Z, Load Z=85, LoadI Z=input+3
+Load Z
+Add tres
+Store Z
+Input
+StoreI Z
+LoadI Z
+Add tres
+StoreI Z
+/A, Load A=87, LoadI A= input+4
+Load A
+Add cuatro
+Store A
+Input
+StoreI A
+LoadI A
+Add cuatro
+StoreI A
+/B, Load B=89, LoadI B= input+5
+Load B
+Add cinco
+Store B
+Input
+StoreI B
+LoadI B
+Add cinco
+StoreI B
+Halt
+
+X, HEX 080
+Y, HEX 081
+Z, HEX 082
+A, HEX 083
+B, HEX 084
+uno,HEX 1
+dos, HEX 2
+tres, HEX 3
+cuatro,HEX 4
+cinco,HEX 5

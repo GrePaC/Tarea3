@@ -1,0 +1,13 @@
+﻿Clear
+Main,Input
+Store X
+Jump Test
+
+Test,Load X
+Skipcond 400
+Jump Main
+Jump End
+
+End,Halt
+
+X,DEC 0

@@ -1,0 +1,75 @@
+﻿/Grecia Pacheco
+/Input
+Clear
+Input 
+Store A
+Input
+Store B
+Input 
+Store C
+/Addition
+Load A
+Subt B
+Store sum
+
+Load sum
+Add C
+Store sum
+/Multiply
+Clear
+Store result
+
+Load sum
+Skipcond 000
+Jump nonneg
+
+Subt sum
+Subt sum
+Store sum
+Clear
+Add one
+Store negflag
+Clear
+Jump loop
+
+nonneg,  Clear
+         Store negflag
+         Load sum
+         Skipcond 400
+         Jump loop
+         Jump halt
+
+loop,    Load result
+         Add five
+         Store result
+
+         Load sum
+         Subt one
+         Store sum
+	
+         Skipcond 400
+         Jump loop
+   
+Load negflag
+Skipcond 800
+Jump halt
+
+Load result
+Subt result
+Subt result
+Store result
+
+halt,    Load result
+         Output	
+         Halt
+
+/Addition 
+A,DEC 0
+B,DEC 0
+C,DEC 0
+sum, DEC 0
+/Mult
+five,DEC 5
+one, DEC 1
+negflag,DEC 0
+result, DEC 0

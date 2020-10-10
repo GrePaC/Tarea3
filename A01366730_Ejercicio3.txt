@@ -1,0 +1,34 @@
+﻿/Grecia Pacheco A01366730
+Clear
+Input
+StoreI X
+Input
+StoreI Y
+Input
+StoreI Z
+Input
+StoreI A
+/Swap X-Y
+LoadI X
+Store val
+LoadI Y
+StoreI X
+Load val
+StoreI Y
+Load cero
+Store val
+/Swap Z-A
+LoadI Z
+Store val
+LoadI A
+StoreI Z
+Load val
+StoreI A
+Load cero
+Halt
+X, HEX 080
+Y, HEX 081
+Z, HEX 082
+A, HEX 083
+val, HEX 0
+cero, HEX 0

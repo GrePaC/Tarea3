@@ -1,0 +1,44 @@
+﻿/Grecia Pacheco A01366730
+Clear
+/Pedir string hasta que input sea 0
+Load Inicial
+Store New
+Inicia,Input
+StoreI New
+LoadI New
+Skipcond 400
+Jump ciclo
+Jump lon
+
+ciclo, Load New
+Add uno
+Store New
+Jump Inicia
+/Medir longitud
+lon, Load Inicial
+Store ap
+Jump Val
+
+Val,LoadI ap
+Skipcond 400
+Jump rep
+Jump end
+
+rep, Load ap
+Add uno
+Store ap
+Load len
+Add uno
+Store len
+Jump Val
+
+end,Load len
+Output
+Halt
+
+Inicial,HEX 080
+New,HEX 0
+ap,HEX 0
+uno, HEX 1
+len, DEC 0
+one, DEC 0
